@@ -32,10 +32,10 @@
             font-family: Arial, sans-serif;
             background-color: #f0f2f5;
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* কন্টেন্ট উপরে নিচে সাজানোর জন্য */
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 10px;
             box-sizing: border-box;
         }
         .container {
@@ -45,6 +45,7 @@
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            margin: 15px 0; /* উপরে নিচে মার্জিন */
         }
         .header {
             background-color: #007BFF;
@@ -58,10 +59,34 @@
             height: auto;
             display: block;
         }
+        /* ---- অ্যাডের জন্য নতুন CSS ---- */
+        .ad-container {
+            width: 100%;
+            max-width: 728px; /* অ্যাডের সাইজ অনুযায়ী */
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
 
+    <!-- ========= শুরু ব্যানার অ্যাড (Top Banner Ad) ========= -->
+    <div class="ad-container">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '0c6cd9a9def00d4e55b6f5a1bfdca47c',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/0c6cd9a9def00d4e55b6f5a1bfdca47c/invoke.js"></script>
+    </div>
+    
+    <!-- ========= আপনার মূল কন্টেন্ট ========= -->
     <div class="container">
         <div class="header">
             অফারটি নিতে নিচের কোড ডায়াল করুন
@@ -71,6 +96,23 @@
             <img src="https://i.postimg.cc/vZjVJYtd/ssstik-io-1752855571684.jpg" alt="ফ্রি ডাটা অফারের কোড">
         </div>
     </div>
+
+    <!-- ========= শেষ ব্যানার অ্যাড (Bottom Banner Ad) ========= -->
+    <div class="ad-container">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '0c6cd9a9def00d4e55b6f5a1bfdca47c',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/0c6cd9a9def00d4e55b6f5a1bfdca47c/invoke.js"></script>
+    </div>
+
+    <!-- ========= সোশ্যাল বার অ্যাড (এই কোডটি সব সময় body ট্যাগের শেষে রাখবেন) ========= -->
+    <script type='text/javascript' src='//pl27139699.profitableratecpm.com/88/cb/49/88cb4984b745433d4e486d7428690ee4.js'></script>
 
 </body>
 </html>
